@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 class Riddle
 {
-    public static Dictionary<string, string> differentRiddles = new Dictionary<string, string>();
+    List<string> stuff = new List<string> {};
 
     static void Randomizer()
     {
-        int i = 1;
-        while (i <=3 )
+        for (int i = 0; i < 3; i++)
         {
-            
+            Random rand = new Random();
+            int currentRiddle = rand.Next(1, riddles.Count);
         }
     }
   static void Main()
